@@ -247,6 +247,19 @@ very interesting repositories that can help you in the naming of your commits:
     git commit -m "tests: test85"
     ```
 
+## Devil's Advocate - "Git commit messages are useless", Eli Schleifer
+
+Disclaimer:  The following sections contain opinions, which may not reflect the
+views of the author or any other party.
+
+[Git commit messages are
+useless](https://trunk.io/blog/git-commit-messages-are-useless?utm_source=tldrwebdev)
+tells us how commit messages have no meaning nowadays. BUT, not all of them. He
+says that commits at the main branch are smart, logical and needed, but not the
+ones in "your random PR branch which will be squash-merged into the main",
+because they are only relevant for the author, and no one else. In the article,
+he also shows how to configure git not to make commits mandatory.
+
 ## References
 
 - [Git No Excuses (Dani Profe)](01-git-noexcuses.draft.html)
