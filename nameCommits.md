@@ -51,6 +51,80 @@ All headings from H1 to H2 to make site more accessible
 
 ## Conventional Commits (Conventional Commits)
 
+It's a lightweight convention on top of comit messages. This convention
+dovetails with SemVer (for more info, see the class notes section of SemVer, the
+previous one to Conventional Commits section, or go to [Official SemVer Docs](https://semver.org/)), by describing the features, fixes and breaking changes
+made in commit messages. The commit message should be structured as follows:
+
+>\<type>[optional scope]: \<description>
+>
+> [optional body]
+>
+> [optional footer(s)]
+The commit contains the following structural elements, to communicate intent to
+the consumers of your library (or collaborators, or so):
+
+- fix: A commit of type `fix` patches a bug in the code (it correlates with
+  PATCH in SemVer).
+- feat: A commit of type `feat` introduces a new feature (MINOR).
+- BREAKING CHANGE: If a commit has BREAKING CHANGE in the footer or appends a !
+  after the type/scope, introduces a breaking API change (MAJOR). It can be part
+  of commits of any type.
+- types other than  `fix:` and `feat:` are allowed, as `build`, `chore`, `ci:`,
+  `docs:`, `style:`, `refactor:`, `perf:`, `test:` and others
+- footers other than BREAKING CHANGE may be provided and follow a convention
+  similar to git trailer format.
+
+### Examples
+
+Now some examples with the Conventional Commits:
+
+- Commit message with description and breaking change footer
+
+```git
+feat: add user image
+
+BREAKING CHANGE: The user has an image from now on
+```
+
+- Commit message with ! to draw attention to breaking change
+
+```git
+feat!: send an email to the user every week to show new products on the web
+```
+
+- Commit message with both ! and BREAKING CHANGE footer
+
+```git
+feat!: senda an email to the user every week to show new products on the web
+
+BREAKING CHANGE: Now users receive  emails every week informing them of new products added to the website
+```
+
+- Commit message with no body
+
+```git
+docs: add guide how to install the application
+```
+
+- Commit message with scope
+
+```git
+feat(lang): add Spanish language
+```
+
+- Commit message with multi-paragraph body and multiple footers
+
+```git
+refactor: change the function sum
+
+Change the function sum to be able to have more than 2 parameters. 
+```
+
+### Relation to Semantic Versioning
+
+`fix` type commits should be translated to PATCH releases. `feat` type commits should be translated to MINOR releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to MAJOR releases.
+
 ## ProGit (ProGit book)
 
 The [ProGit](http://progit.org/book/) book doesn't have a really good section
