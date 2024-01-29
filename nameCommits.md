@@ -6,7 +6,7 @@ it easier.
 In the guide, every reference taken is written at the end of it. Every section
 of the guide cites the reference it is taken from too.
 
-## Main idea of a commit
+## Main idea of naming a commit
 
 A commit must transmit the changes one has made into his repo. One must write
 them thinking  about who would read them: someone who wants to understand
@@ -59,10 +59,22 @@ that explains the name of the commits, but it talks about it in section
 official documentation of Git Project:
 > The Git project provides a document that lays out a number
 of good tips for creating commits from which to submit patches — you can read it in the Git source
-code in the Documentation/SubmittingPatches file
+code in the Documentation/SubmittingPatches file.
 
+Also, it says
+> As a general rule, your messages should start with a single line that's no
+> more than about 50 characters and that describes the changeset concisely,
+> followed by a blank line, followed by a more detailed explanation. The Git
+> project requires that the more detailed explanation include your motivation
+> for the change and contrast its implementation with previous behavior. [...]
+> Write your commit message in the imperative: "Fix bug" and not "Fixed bug" or
+> "Fixes bug".
 
-- 
+It also provides an adaptation of a template created by Tim Pope (Tim Pope
+Template).
+As a warning, the authors here also inform the reader the examples of commits'
+messages given throughout the boo are not nicely-formatted, but that's for the
+sake of brevity.
 
 ## References
 
@@ -71,3 +83,4 @@ code in the Documentation/SubmittingPatches file
 - [ProGit book] (<https://git-scm.com/book/en/v2>)
 - [Commit advice gcapes- How to write a Good Commit message] (<https://gcapes.github.io/git-course/05-commit-advice/#how-to-write-a-good-commit-message>)
 - (Añadir también Documentación del proyecto git)
+- [Tim Pope template](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
