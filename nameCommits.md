@@ -78,6 +78,11 @@ sake of brevity.
 
 ## Commit advice gcapes (How to write a Good Commit message)
 
+These are the same as the ones in the classnotes (Summary of Best Practice). It
+also has another tips, like Commit anything that cannot be automatically
+recreated or when to commit changes. But, as they aren't related to the subject
+I'm describing in this guide,  I won't put them here.
+
 ## Git Project Documentation
 
 In the official documentation of Git, it doesn't really explain so much of how to write a good commit, but how the commit
