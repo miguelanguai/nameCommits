@@ -76,11 +76,22 @@ As a warning, the authors here also inform the reader the examples of commits'
 messages given throughout the boo are not nicely-formatted, but that's for the
 sake of brevity.
 
+## Commit advice gcapes (How to write a Good Commit message)
+
+## Git Project Documentation
+
+In the official documentation of Git, it doesn't really explain so much of how to write a good commit, but how the commit
+message works in it. To write a good commit, it says the next at the begginning
+of the section:
+> it’s a good idea to begin the commit message with a single short (no more than 50 characters) line summarizing the change, followed by a blank line and then a more thorough description.
+
+## Tim Pope Template
+
 ## References
 
 - [Git No Excuses (Dani Profe)](01-git-noexcuses.draft.html)
 - [Conventional Commits](conventionalCommits.com)
 - [ProGit book] (<https://git-scm.com/book/en/v2>)
 - [Commit advice gcapes- How to write a Good Commit message] (<https://gcapes.github.io/git-course/05-commit-advice/#how-to-write-a-good-commit-message>)
-- (Añadir también Documentación del proyecto git)
+- [Git Docs](https://git-scm.com/docs/git-commit)
 - [Tim Pope template](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
