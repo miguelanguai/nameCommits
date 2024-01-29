@@ -172,7 +172,7 @@ very interesting repositories that can help you in the naming of your commits:
 
 - [Git No Excuses (Dani Profe)](01-git-noexcuses.draft.html)
 - [Conventional Commits](conventionalCommits.com)
-- [ProGit book](<https://git-scm.com/book/en/v2>)
-- [Commit advice gcapes- How to write a Good Commit message](<https://gcapes.github.io/git-course/05-commit-advice/#how-to-write-a-good-commit-message>)
+- [ProGit book](https://git-scm.com/book/en/v2)
+- [Commit advice gcapes- How to write a Good Commit message](https://gcapes.github.io/git-course/05-commit-advice/#how-to-write-a-good-commit-message)
 - [Git Docs](https://git-scm.com/docs/git-commit)
 - [Tim Pope template](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
