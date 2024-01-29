@@ -87,6 +87,60 @@ of the section:
 
 ## Tim Pope Template
 
+## Interesting Repositories to see
+
+I have searched throughout GitHub repositories to see if there was a guide made
+to name repositories like I'm making at the moment, but I didn't find anything
+similar to the thing I was looking for. In my searching, however, I have found
+very interesting repositories that can help you in the naming of your commits:
+
+- [Requirements for commit
+  names](https://github.com/Oleg-Kolosov/Requirements-for-Commit-Names)
+  - This repository shows how to name commits according to the AngularJS commit
+    message convention:
+
+      ```git
+
+      init   (hw_3):    add solutions for tasks
+      <type> (<scope>):  <short summary>
+        │       │             │
+        │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
+        │       │
+        │       └─⫸ Commit Scope: hw_1|hw_2|hw_3|hw_4|hw_5
+        │
+        └─⫸ Commit Type: build|docs|feat|fix|perf|refactor|test|init
+        
+      ```
+
+    - Type section: Must be of the following
+      - build
+      - ci
+      - docs
+      - feat
+      - fix
+      - perf
+      - refactor
+      - test
+    - Scope section: The name of the npm package affected (as regular repositories can be others than Angular, its use is optional).
+    - Summary: For providing a short description of the change. What is the
+      change and why is it made.
+  - Example:
+
+  ```git
+    git commit -m "docs: adding new feature to README.md"
+  ```
+
+- [Smart commit](https://github.com/sbimochan/smart-commit)
+  - This repository is a shell script that creates a commit prefixed with the
+    current branch name you are working in. Example:
+
+    ```shell
+    # We are working in tests branch
+    commit "test85"
+    # translates to
+    git commit -m "tests: test85"
+    ```
+
 ## References
 
 - [Git No Excuses (Dani Profe)](01-git-noexcuses.draft.html)
