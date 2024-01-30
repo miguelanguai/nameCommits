@@ -6,6 +6,21 @@ it easier.
 In the guide, every reference taken is written at the end of it. Every section
 of the guide cites the reference it is taken from too.
 
+## Index of contents
+
+- Main idea of naming a commit
+- Summary of best practice
+- Teacher thoughts
+- Conventional Commits
+- ProGit
+- Commit advice gcapes (How to write a Good Commit message)
+- Git Project Documentation
+- Tim Pope Template
+- Good practice to write commits in Git - midudev
+- Interesting Repositories to see
+- Devil's Advocate - "Git commit messages are useless", Eli Schleifer
+- References
+
 ## Main idea of naming a commit
 
 A commit must transmit the changes one has made into his repo. One must write
@@ -18,20 +33,6 @@ easier.
 
 There are many conventions for creating commit messages. I'll show them all and
 give some examples of each one.
-
-## Index of contents
-
-- Summary of best practice
-- Teacher thoughts
-- Conventional Commits
-- ProGit
-- Commit advice gcapes (How to write a Good Commit message)
-- Git Project Documentation
-- Tim Pope Template
-- Good practice to write commits in Git - midudev
-- Interesting Repositories to see
-- Devil's Advocate - "Git commit messages are useless", Eli Schleifer
-- References
 
 ## Summary of best practice (7.3 Git No Excuses - Commit advices gcapes)
 
