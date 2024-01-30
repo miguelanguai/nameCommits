@@ -19,6 +19,20 @@ easier.
 There are many conventions for creating commit messages. I'll show them all and
 give some examples of each one.
 
+## Index of contents
+
+- Summary of best practice
+- Teacher thoughts
+- Conventional Commits
+- ProGit
+- Commit advice gcapes (How to write a Good Commit message)
+- Git Project Documentation
+- Tim Pope Template
+- Good practice to write commits in Git - midudev
+- Interesting Repositories to see
+- Devil's Advocate - "Git commit messages are useless", Eli Schleifer
+- References
+
 ## Summary of best practice (7.3 Git No Excuses - Commit advices gcapes)
 
 1. Separate the subject from body with a blank line
