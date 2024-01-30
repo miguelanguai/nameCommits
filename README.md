@@ -212,6 +212,7 @@ arise. Then he says:
 > This first line should be a concise summary of the changes introduced by the
 > commit; if there are any technical details that cannot be expressed in these
 > strict size constraints, put them in the body instead.
+
 As we can see, it is not different from the Pro Git book guidelines.
 
 Example:
@@ -231,14 +232,14 @@ development industry:
    Understand each commit, not as a message of what we have done, but as an
    instruction to change the status of the project. It's better for
    understanding with this sentence:
-   "If I apply this commit, then this commit":
+   "If I apply this commit, then this commit will...":
    - Add a new search feature
    - Fix a problem with the nav
    - Change the background color
    - Remove a variable
-2. Don't use period in your messages
+2. Don't use period in your messages.
    Only commas are necessary (not always) for our commit messages. Each char
-   counts when creating a commit message. Don't waste them unnecessarily.
+   counts when creating a commit message. Don't waste them needlessly.
 3. Use 50 characters as maximum for your commit message
    Make your message clear, direct and concise.
 4. Add all the necessary context in the commit body.
@@ -260,7 +261,7 @@ development industry:
    - refactor
    - style
    - test
-6. Consider using utilities to do commit
+6. Consider using utilities to do commit.
 With [commitlint](https://commitlint.js.org/#/), you can make your commits semantic, easy-to-read and follow the
 convention you choose. If not, it tells you where you are failing in:
 
@@ -275,7 +276,7 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 ```
 
 With [commitizen](https://commitizen-tools.github.io/commitizen/), you can use a command line to make you choose the type of
-commit and, thus, you won't depend on doing this manually in the commit message.
+commit. Thus, you won't depend on doing this manually in the commit message.
 
 ## Interesting Repositories to see
 
@@ -347,23 +348,28 @@ limit for the summary (ProGit says 50, robert here is more flexible and asks for
 - Describe any limitations of the current code.
 - Do not include patch set-specific comments.
 
+> NOTE: this guide is not in Robert's Github profile, it is in Github Gist profile.
+
 ## Devil's Advocate - "Git commit messages are useless", Eli Schleifer
 
-Disclaimer:  The following sections contain opinions, which may not reflect the
-views of the author or any other party.
+> DISCLAIMER:  The following section contains a 3rd opinion, which may not reflect the
+views of the author of this guidelines or any other party.
 
 [Git commit messages are
 useless](https://trunk.io/blog/git-commit-messages-are-useless?utm_source=tldrwebdev)
 tells us how commit messages have no meaning nowadays. BUT, not all of them. He
 says that commits at the main branch are smart, logical and needed, but not the
 ones in "your random PR branch which will be squash-merged into the main",
-because they are only relevant for the author, and no one else. In the article,
+because they are only relevant for the author, and no one else.
+
+In the article,
 he also shows how to configure git not to make commits mandatory.
 
 ## References
 
 - Git No Excuses (Dani Profe)
 - [Conventional Commits](conventionalCommits.com)
+- [Official SemVer Docs](https://semver.org/)
 - [ProGit book](https://git-scm.com/book/en/v2)
 - [Commit advice gcapes- How to write a Good Commit
   message](https://gcapes.github.io/git-course/05-commit-advice/#how-to-write-a-good-commit-message)
