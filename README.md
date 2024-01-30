@@ -260,6 +260,47 @@ very interesting repositories that can help you in the naming of your commits:
     git commit -m "tests: test85"
     ```
 
+## Good practice to write commits in Git - midudev
+
+This are the recommended practices by midudev, a good-known person in the
+development industry:
+
+1. Use imperatives (Add, Change, Fix, Remove,...)
+   Understand each commit, not as a message of what we have done, but as an
+   instruction to change the status of the project. It's better for
+   understanding with this sentence:
+   "If I apply this commit, then this commit":
+   - Add a new search feature
+   - Fix a problem with the nav
+   - Change the background color
+   - Remove a variable
+2. Don't use period in your messages
+   Only commas are necessary (not always) for our commit messages. Each char
+   counts when creating a commit message. Don't waste them unnecessarily.
+3. Use 50 characters as maximum for your commit message
+   Make your message clear, direct and concise.
+4. Add all the necessary context in the commit body.
+   When adding a body to our commit, it's better to use `git commit`than
+   `git commit -m "only the commit title here"`
+5. Use a prefix for your commits to make them more semantic.
+
+   ```git
+    <commit-type>[scope]: <description>
+   ```
+
+   and these would be the prefixes:
+   - feat
+   - fix
+   - perf
+   - build
+   - ci
+   - docs
+   - refactor
+   - style
+   - test
+6. Consider useing utilities to do commit
+
+
 ## Devil's Advocate - "Git commit messages are useless", Eli Schleifer
 
 Disclaimer:  The following sections contain opinions, which may not reflect the
@@ -283,3 +324,6 @@ he also shows how to configure git not to make commits mandatory.
 - [Git Docs](https://git-scm.com/docs/git-commit)
 - [Tim Pope
   template](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+- [Buenas prácticas para escribir commits en Git - midudev](https://midu.dev/buenas-practicas-escribir-commits-git/)
+- [Git commit messages are
+useless](https://trunk.io/blog/git-commit-messages-are-useless?utm_source=tldrwebdev)
