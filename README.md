@@ -3,8 +3,8 @@
 This guide is a compilation of how to name commits, to help you in your future
 work.  It's not meant to be strict rules, but rather guidelines that will make
 it easier.
-In the guide, every reference taken is written at the end of it. Every section
-of the guide cites the reference it is taken from too.
+
+Every piece of information written here is referenced at the end of this guide.
 
 ## Index of contents
 
@@ -23,8 +23,8 @@ of the guide cites the reference it is taken from too.
 
 ## Main idea of naming a commit
 
-A commit must transmit the changes one has made into his repo. One must write
-them thinking  about who would read them: someone who wants to understand
+A commit must transmit the changes one has made into a repo. One must write
+them thinking about who would read them: someone who wants to understand
 what he did (i.e., himself), and someone else who wants to know why this change
 was done. The latter person should be able to look at the diff between two tags
 and see what changed. If it takes more than five lines for him to do so, then
@@ -64,10 +64,10 @@ All headings from H1 to H2 to make site more accessible
 - Override your choice if in a project, there is another one. You must fit in
   the team, not the contrary.
 
-## Conventional Commits (Conventional Commits)
+## Conventional Commits
 
 It's a lightweight convention on top of comit messages. This convention
-dovetails with SemVer (for more info, see the class notes section of SemVer, the
+dovetails with SemVer (for more info, see SemVer class notes section, the
 previous one to Conventional Commits section, or go to [Official SemVer
 Docs](https://semver.org/)), by describing the features, fixes and breaking
 changes
@@ -94,7 +94,7 @@ the consumers of your library (or collaborators, or so):
 
 ### Examples
 
-Now some examples with the Conventional Commits:
+Now, some examples with Conventional Commits:
 
 - Commit message with description and breaking change footer
 
@@ -121,7 +121,7 @@ BREAKING CHANGE: Now users receive  emails every week informing them of new prod
 - Commit message with no body
 
 ```git
-docs: add guide how to install the application
+docs: add guide howToUseAPI.md
 ```
 
 - Commit message with scope
@@ -147,15 +147,16 @@ commits, regardless of type, should be translated to MAJOR releases.
 ## ProGit (ProGit book)
 
 The [ProGit](http://progit.org/book/) book doesn't have a really good section
-that explains the name of the commits, but it talks about it in section
-"Contributing to a Project/Commit Guidelines". In this section, it references to
+that explains the name of the commits, but it talks about it in
+ "Contributing to a Project/Commit Guidelines". In this one, it references to
 official documentation of Git Project:
 > The Git project provides a document that lays out a number
 of good tips for creating commits from which to submit patches — you can read it
-in the Git source
-code in the Documentation/SubmittingPatches file.
+in the Git source code in the Documentation/SubmittingPatches file.
 
-Also, it says
+(see Git Project Documentation section)
+
+Also, it says:
 > As a general rule, your messages should start with a single line that's no
 > more than about 50 characters and that describes the changeset concisely,
 > followed by a blank line, followed by a more detailed explanation. The Git
@@ -164,11 +165,12 @@ Also, it says
 > Write your commit message in the imperative: "Fix bug" and not "Fixed bug" or
 > "Fixes bug".
 
-It also provides an adaptation of a template created by Tim Pope (Tim Pope
-Template).
 As a warning, the authors here also inform the reader the examples of commits'
-messages given throughout the boo are not nicely-formatted, but that's for the
+messages given throughout the book are not nicely-formatted, but that's for the
 sake of brevity.
+
+It also provides an adaptation of a template created by Tim Pope (see Tim Pope
+Template section).
 
 ## Commit advice gcapes (How to write a Good Commit message)
 
@@ -240,8 +242,8 @@ development industry:
 3. Use 50 characters as maximum for your commit message
    Make your message clear, direct and concise.
 4. Add all the necessary context in the commit body.
-   When adding a body to our commit, it's better to use `git commit`than
-   `git commit -m "only the commit title here"`
+   When adding a body to our commit, it's better to use `git commit` than
+    `git commit -m "only the commit title here"`
 5. Use a prefix for your commits to make them more semantic.
 
    ```git
