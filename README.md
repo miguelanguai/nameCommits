@@ -329,6 +329,21 @@ very interesting repositories that can help you in the naming of your commits:
     git commit -m "tests: test85"
     ```
 
+- [Commit Message Guidelines](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53)
+Another guideline of recommendations of how to write a commit. It's really
+similar to ProGit book explanation. The only difference is in the characters
+limit for the summary (ProGit says 50, robert here is more flexible and asks for
+72). Instead, he wrote a set of tips that are really useful:
+  - Describe why a change is being made.
+- How does it address the issue?
+- What effects does the patch have?
+- Do not assume the reviewer understands what the original problem was.
+- Do not assume the code is self-evident/self-documenting.
+- Read the commit message to see if it hints at improved code structure.
+- The first commit line is the most important.
+- Describe any limitations of the current code.
+- Do not include patch set-specific comments.
+
 ## Devil's Advocate - "Git commit messages are useless", Eli Schleifer
 
 Disclaimer:  The following sections contain opinions, which may not reflect the
