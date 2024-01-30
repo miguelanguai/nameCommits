@@ -194,8 +194,8 @@ of the section:
 Here's a model Git commit message:
 > Capitalized, short (50 chars of less summary)
 
-- The first line is treated as the subject of an email and the rest of the text as
-the body.
+- The first line is treated as the subject of an email and the rest of the text
+  as the body.
 - The blank line separating the summary from the body is critical
 (unless you omit the body entirely).
 - Write your commit message in the imperative:  "Fix bug for xyz", not "fixes
