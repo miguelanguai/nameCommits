@@ -139,6 +139,23 @@ refactor: change the function sum
 Change the function sum to be able to have more than 2 parameters. 
 ```
 
+### DaniProfe comments
+
+Here are the comments in the classnotes that are an addition to the things said
+in Conventional Commits website:
+
+- Using the conventions of Conventional Commits witt play nicely with following
+  SemVer.
+- Don't mix more than 1 thing in a commit: commit separately
+- Initial lower case are used:
+  - In initial tag, also after the ':', as opposed to the conventions we've seen before.
+  - This is because after a ':', you don't use uppercase, and because the
+    initial tag is a keyword, not the start of a sentence, and they have chosen
+    tou use lowercase.
+- Use Conventional Commits helps to communicate clearly and also permit even
+  automate things as geenration of software releases (that cumulate several
+  commits and are published).
+
 ### Relation to Semantic Versioning
 
 `fix` type commits should be translated to PATCH releases. `feat` type commits
