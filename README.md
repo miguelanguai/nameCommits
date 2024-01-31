@@ -17,6 +17,7 @@ Every piece of information written here is referenced at the end of this guide.
 - Git Project Documentation
 - Tim Pope Template
 - Good practice to write commits in Git - midudev
+- Fix Github Issues
 - Interesting Repositories to see
 - Devil's Advocate - "Git commit messages are useless", Eli Schleifer
 - References
@@ -280,6 +281,24 @@ With [commitizen](https://commitizen-tools.github.io/commitizen/), you can use a
 command line to make you choose the type of
 commit. Thus, you won't depend on doing this manually in the commit message.
 
+## Fix Github Issues
+
+There is a special feature commits have:  they close issues when pushed to
+GitHub. This means that if you include the issue number in the commit message
+like so:
+
+```git
+git commit -m "fix: function sum. Fixes #4"
+```
+
+You will close  Issue #4 in your Github Remote Repository with this commit! You
+can also reference multiple issues by adding more `#` symbols before the issue
+number.
+You can close issues with words `Fixes`,`Fixed`, `Resolves`, or `Resolved`.
+
+For more information see [Closing Issues via Commit
+Messages](https://github.blog/2013-01-22-closing-issues-via-commit-messages/)
+
 ## Interesting Repositories to see
 
 I have searched throughout GitHub repositories to see if there was a guide made
@@ -385,3 +404,5 @@ he also shows how to configure git not to make commits mandatory.
 useless](https://trunk.io/blog/git-commit-messages-are-useless?utm_source=tldrwebdev)
 - [commitizen](https://commitizen-tools.github.io/commitizen/)
 - [commitlint](https://commitlint.js.org/#/)
+- [Closing Issues via Commit
+Messages](https://github.blog/2013-01-22-closing-issues-via-commit-messages/)
